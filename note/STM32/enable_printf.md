@@ -4,8 +4,8 @@
 
 ```c
 int _write (int file, char *pBuffer, int size)；
-
-_read'`_lseek'`_isatty'`_fstat'`_write'`_sbrk'
+//其他可重载的函数：
+_read() _lseek() _isatty() _fstat() _write() _sbrk()
 ```
 
 
