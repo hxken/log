@@ -29,5 +29,5 @@ led_classdev_register(NULL, &led_cdev);
 ```
 反注册
 ```c
-led_classdev_unregister(&.led_cdev);
+led_classdev_unregister(&led_cdev);
 ```
