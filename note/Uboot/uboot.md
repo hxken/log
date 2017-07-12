@@ -127,3 +127,10 @@ setenv bootargs ‘noinitrd mem=64M console=ttySAC0 root=/dev/nfs nfsroot=192.16
 ```
 
 上面就是我们经常使用的几种bootargs的组合，老实说，bootargs非常非常的灵活，所以设置的方法有很多中形式，具体的还应该根据你的平台具体的情况来设置
+
+## 附录
+```
+bootargs=mem=64M console=ttyAMA0,115200 root=/dev/mtdblock2 rootfstype=jffs2 mtdparts=hi_sfc:1M(boot),4M(kernel),11M(rootfs)
+
+mem=64M console=ttyAMA0,115200 root=/dev/sda1 rootfstype=ext4 init=linuxrc mtdparts=hi_sfc:1M(boot),4M(kernel),11M(rootfs)
+```
