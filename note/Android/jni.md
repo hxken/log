@@ -1,7 +1,19 @@
 # JNI
-LD_LIBRARY_PATH
-CLASS_PATH
-javah -jin file_name
+
+LD_LIBRARY_PATH  
+CLASS_PATH  
+生成相应的 C/C++ 头文件
+javah -jni clsaa_name   
+
+```
+# 使用时在文件目录，如
+JniForDriver/
+└── Led.class
+则使用如下命令 在当前文件夹生成 JniForDriver_Led.h文件
+javah -jni JniForDriver.Led
+```
+
+
 ```java
 ppublic native void hello();//使用时申明
 ```
