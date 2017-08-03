@@ -15,7 +15,8 @@ javah -jni JniForDriver.Led
 
 
 ```java
-ppublic native void hello();//使用时申明
+//JAVA中申明
+public native void hello();//使用时申明
 ```
 1. 加载C库  
 
